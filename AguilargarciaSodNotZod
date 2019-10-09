@@ -80,17 +80,6 @@ public class AguilargarciaSodNotZod
 				//Get and validate howManyEach value
 				howManyEach = validateHowManyEach(input);
 				
-				//Validate answer to make sure user only buys as many more items possible
-				//display error if value more than possible
-				while (howManyEach > (howManyItems - itemCounter))
-				{
-					//Invalid error & let user know how many more they can buy
-					displayInvalidHowMany(howManyItems, itemCounter);
-					
-					//Validate howManyEach again
-					howManyEach = validateHowManyEach(input);
-				}//END OF IF
-				
 				//test menu selection
 				if (menuSelection == 'A')
 				{
